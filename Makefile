@@ -3,7 +3,7 @@
 
 all: $(OBJ)
 
-$(OBJ):% : %.cpp
+$(OBJ): $(OBJ).cpp
 	g++ $< -o a.out
 
 clean:
