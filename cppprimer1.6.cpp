@@ -14,3 +14,14 @@ int main()
     std::cout << " is " << v1 + v2 << std::endl;
     return 0;
 }
+/* error output
+g++ cppprimer1.6.cpp -o a.out
+cppprimer1.6.cpp: In function ‘int main()’:
+cppprimer1.6.cpp:9:15: error: expected primary-expression before ‘<<’ token
+               << " and " << v2;
+               ^
+cppprimer1.6.cpp:10:15: error: expected primary-expression before ‘<<’ token
+               << " is " << v1 + v2 << std::endl;
+               ^
+make: *** [cppprimer1.6] Error 1
+*/
